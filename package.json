@@ -1,0 +1,88 @@
+{
+  "name": "juice_note",
+  "version": "1.0.0",
+  "author": "https://github.com/nookery",
+  "description": "聚思笔记本",
+  "main": "dist/main/index.js",
+  "private": true,
+  "scripts": {
+    "t": "tailwind-config-viewer -o",
+    "rebuild": "electron-rebuild",
+    "dev": "vite",
+    "build:vite": "vite build",
+    "build": "vite build && electron-builder",
+    "build:mac": "vite build && electron-builder --mac",
+    "build:win": "vite build && electron-builder --win",
+    "build:linux": "vite build && electron-builder --linux",
+    "build:mwl": "vite build && electron-builder -mwl"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "debug": {
+    "env": {
+      "VITE_DEV_SERVER_HOSTNAME": "127.0.0.1",
+      "VITE_DEV_SERVER_PORT": 3344,
+      "VITE_DEV_SERVER_URL": "http://127.0.0.1:3344"
+    }
+  },
+  "resolutions": {
+    "vue": "^3.2.47"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.194",
+    "@types/node": "^18.15.11",
+    "@vue/eslint-config-prettier": "^7.1.0",
+    "autoprefixer": "^10.4.14",
+    "electron": "^21.4.4",
+    "electron-builder": "^23.6.0",
+    "eslint": "^8.39.0",
+    "eslint-plugin-vue": "^9.11.0",
+    "postcss": "^8.4.16",
+    "postcss-nesting": "^10.1.10",
+    "prettier": "^2.8.7",
+    "prettier-plugin-tailwindcss": "^0.2.7",
+    "tailwind-config-viewer": "^1.7.2"
+  },
+  "dependencies": {
+    "@electron/rebuild": "^3.2.10",
+    "@tailwindcss/typography": "^0.5.9",
+    "@tiptap/extension-bullet-list": "^2.0.2",
+    "@tiptap/extension-code-block": "^2.0.2",
+    "@tiptap/extension-gapcursor": "^2.0.2",
+    "@tiptap/extension-hard-break": "^2.0.2",
+    "@tiptap/extension-highlight": "^2.0.2",
+    "@tiptap/extension-link": "^2.0.2",
+    "@tiptap/extension-list-item": "^2.0.2",
+    "@tiptap/extension-table": "^2.0.2",
+    "@tiptap/extension-table-cell": "^2.0.2",
+    "@tiptap/extension-table-header": "^2.0.2",
+    "@tiptap/extension-table-row": "^2.0.2",
+    "@tiptap/extension-typography": "^2.0.2",
+    "@tiptap/pm": "^2.0.2",
+    "@tiptap/starter-kit": "^2.0.2",
+    "@tiptap/vue-3": "^2.0.2",
+    "@vitejs/plugin-vue": "^3.2.0",
+    "@vue/eslint-config-typescript": "^11.0.3",
+    "better-sqlite3": "^8.1.0",
+    "clipboard": "^2.0.11",
+    "daisyui": "^3.0.20",
+    "electron-log": "^5.0.0-beta.23",
+    "electron-updater": "^5.3.0",
+    "lodash": "^4.17.21",
+    "monaco-editor": "^0.36.1",
+    "node-pty": "^0.10.1",
+    "pinia": "^2.0.35",
+    "tailwindcss": "^3.3.1",
+    "vite": "^3.2.5",
+    "vite-plugin-electron": "^0.9.3",
+    "vue": "^3.2.47",
+    "vue-cropper": "^1.0.8",
+    "vue-drag-resize": "^2.0.3",
+    "vue-router": "^4.1.6",
+    "vuedraggable": "^4.1.0",
+    "xterm": "^5.1.0",
+    "xterm-addon-fit": "^0.7.0",
+    "xterm-theme": "^1.1.0"
+  }
+}

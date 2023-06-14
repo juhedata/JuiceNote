@@ -1,0 +1,49 @@
+/**
+ * @see https://www.electron.build/configuration/configuration
+ */
+{
+  appId: "YourAppID",
+  productName: "聚思笔记本",
+  asar: false,
+  directories: {
+    output: "release/",
+  },
+  // 打包时复制这些文件
+  files: [
+    "dist/main",
+    "dist/preload",
+    {
+      from: "dist/ui",
+      to: "",
+    },
+    "database",
+    "playground",
+    "logs"
+  ],
+  mac: {
+    artifactName: "foucs_note_${version}.${ext}",
+    // 在线下载时下载dmg，自动更新时下载zip
+    target: ["dmg", "zip"],
+    icon: "./public/logo.icns",
+  },
+  win: {
+    target: [
+      {
+        target: "nsis",
+        arch: ["x64"],
+      },
+    ],
+    artifactName: "foucs_note_${version}.${ext}",
+    icon: "./public/logo.png",
+  },
+  linux: {
+    artifactName: "foucs_note_${version}.${ext}",
+    category: "Utility",
+  },
+  nsis: {
+    oneClick: false,
+    perMachine: false,
+    allowToChangeInstallationDirectory: true,
+    deleteAppDataOnUninstall: false,
+  },
+}

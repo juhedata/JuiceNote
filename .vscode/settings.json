@@ -1,0 +1,54 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "/*electron-builder.json5"
+      ],
+      "url": "https://json.schemastore.org/electron-builder"
+    }
+  ],
+  "cSpell.words": [
+    "alpinejs",
+    "AUTOINCREMENT",
+    "baizhantang",
+    "blockmap",
+    "codemirror",
+    "daisyui",
+    "deepcopy",
+    "elif",
+    "extname",
+    "fromkeys",
+    "gapcursor",
+    "highlightjs",
+    "hightlight",
+    "katex",
+    "linebreak",
+    "Lowlight",
+    "mavon",
+    "minh",
+    "minw",
+    "moxiaobei",
+    "phips",
+    "postcss",
+    "prismjs",
+    "querystring",
+    "Rowid",
+    "softprops",
+    "stackoverflow",
+    "thedoctor",
+    "tinymce",
+    "Tiptap",
+    "toastui",
+    "togglefullscreen",
+    "tongxiangyu",
+    "uintptr",
+    "Uturn",
+    "vuedraggable",
+    "vuex",
+    "webfont"
+  ],
+  "files.autoSave": "onFocusChange",
+  "vue.features.codeActions.enable": false
+}
